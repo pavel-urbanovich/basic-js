@@ -19,7 +19,7 @@ function createDreamTeam(members) {
   const result = []
   members.forEach(item =>{
     if (typeof item === 'string') {
-      return result.push(item.trim()[0].toLocaleUpperCase())
+      return result.push(item.trim()[0].toUpperCase())
   }
   })
   return result.sort().join('');
