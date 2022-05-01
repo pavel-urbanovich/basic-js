@@ -16,11 +16,11 @@ const { NotImplementedError } = require('../extensions/index.js');
   for (let i = 0; i < email.length; i++) {
     if (email[i] ==='@' && email[i + 1] !== '.') {
       res = email.slice(i + 1);
-   }
+    }
     if (email[i] ==='@' && email[i + 1] === '.') {
     res = email.slice(i + 2);
     }
- } return res
+} return res
 }
 
 module.exports = {
