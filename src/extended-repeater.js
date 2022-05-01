@@ -20,6 +20,10 @@ const { NotImplementedError } = require('../extensions/index.js');
   let res = '';
   let subString = '';
 
+  if (options.repeatTimes === undefined) {
+    return str + options.addition;
+  }
+
   for(let i = 0; i < options.repeatTimes; i++) {
     if (!options.separator) {
       options.separator = '+';
